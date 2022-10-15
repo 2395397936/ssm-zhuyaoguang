@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper.UserMapper">
+    <!--    t1-->
+    <select id="findCourseListStudent" resultType="chosenCourseStudent">
+        SELECT course_list.*,
+               student.student_name,
+            student.student_number
+        FROM course_list,
+             student
+        WHERE course_list.student_id = student.student_id
+    </select>
+    <!--t2-->
+    <resultMap type="chosenCourseItem" id="courseListInfoMap">
+        <id column="course_list_id" property="courseListId"/>
+        <result column="student_id" property="studentId"/>
+        <association property="student" javaType="student">
+            <id column="student_id" property="studentId"/>
+            <result column="student_number" property="studentNumber"/>
+            <result column="student_name" property="studentName"/>
+            <result column="college" property="college"/>
+            <result column="admission_date" property="admissionDate"/>
+        </association>
+    </resultMap>
+
+    <resultMap type="chosenCourseItem" id="CourseListAndCourseStudentDetailResultMap"
+               extends="courseListInfoMap">
+        <collection property="courseStudentDetails" ofType="courseStudentDetail">
+            <id column="course_student_detail_id" property="courseStudentDetailId"/>
+            <result column="course_list_id" property="courseListId"/>
+            <result column="course_id" property="courseId"/>
+        </collection>
+    </resultMap>
+
+    <select id="findCourseListAndCourseStudentDetail" parameterType="map"
+            resultMap="CourseListAndCourseStudentDetailResultMap">
+        SELECT cl.*,
+               s.student_name,
+               s.student_number,
+            csd.course_id
+        FROM course_list cl,
+             student s,
+             course_student_detail csd
+        WHERE cl.student_id = s.student_id
+          and cl.course_list_id = csd.course_list_id
+          and academic_year = #{academicYear}
+          and term = #{term}
+    </select>
+
+    <!--t3-->
+    <resultMap type="student" id="studentAndCourseResultMap">
+        <!-- 客户信息 -->
+        <result column="student_name" property="studentName"/>
+        <result column="student_number" property="studentNumber"/>
+
+        <collection property="courseLists" ofType="courseList">
+            <id column="course_list_id" property="courseListId"/>
+            <result column="student_id" property="studentId"/>
+            <result column="term" property="term"/>
+            <result column="academic_year" property="academicYear"/>
+            <result column="student_number" property="studentNumber"/>
+            <result column="student_name" property="studentName"/>
+            <result column="course_number" property="courseNumber"/>
+            <result column="credit" property="credit"/>
+            <result column="period" property="period"/>
+            <result column="optional_course_number" property="optionalCourseNumber"/>
+            <result column="compulsory_course_number" property="compulsoryCourseNumber"/>
+
+            <collection property="courseStudentDetails" ofType="courseStudentDetail">
+                <id column="course_student_detail_id" property="CourseStudentDetailId"/>
+                <result column="course_list_id" property="courseListId"/>
+                <result column="course_id" property="courseId"/>
+
+                <association property="course" javaType="course">
+                    <id column="course_id" property="courseId"/>
+                    <result column="course_code" property="courseCode"/>
+                    <result column="course_name" property="courseName"/>
+                    <result column="course_type" property="courseType"/>
+                    <result column="semester" property="semester"/>
+                    <result column="course_hour" property="courseHour"/>
+                    <result column="course_credit" property="credit"/>
+                </association>
+            </collection>
+        </collection>
+    </resultMap>
+
+    <select id="findStudentAndCourse" resultMap="studentAndCourseResultMap">
+        SELECT course_list.*,
+               student.student_name,
+               student.student_number,
+               course_student_detail.course_list_id,
+               course_student_detail.course_id,
+               course.course_name,
+               course.course_type,
+               course.course_credit
+        FROM course_list,
+             student,
+             course_student_detail,
+             course
+        WHERE course_list.student_id = student.student_id
+          AND course_student_detail.course_list_id = course_list.course_list_id
+          AND course.course_id = course_student_detail.course_id;
+    </select>
+</mapper>

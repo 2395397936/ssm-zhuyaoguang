@@ -1,0 +1,6 @@
+# Project exclude paths
+/page21-39/target/
+/page83-95/target/
+/spring_mybatis/target/
+/spring_mybatis_springmvc/target/
+/spring_springmvc/target/
