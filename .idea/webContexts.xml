@@ -3,6 +3,7 @@
   <component name="WebContextManager">
     <option name="state">
       <map>
+        <entry key="file://$PROJECT_DIR$/big_project/web/WEB-INF/pages/commoditiesHome.jsp" value="file://$PROJECT_DIR$/big_project/web/WEB-INF/pages" />
         <entry key="file://$PROJECT_DIR$/spring_mybatis_springmvc/web/WEB-INF/pages/login.jsp" value="file://$PROJECT_DIR$/spring_mybatis_springmvc/web/WEB-INF/pages" />
         <entry key="file://$PROJECT_DIR$/spring_mybatis_springmvc/web/WEB-INF/pages/register.jsp" value="file://$PROJECT_DIR$/spring_mybatis_springmvc/web/WEB-INF/pages" />
       </map>

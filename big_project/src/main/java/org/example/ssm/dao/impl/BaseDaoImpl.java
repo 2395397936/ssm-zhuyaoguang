@@ -50,8 +50,8 @@ public abstract class BaseDaoImpl<T> extends SqlSessionDaoSupport implements Bas
     public void deleteById(Serializable id) {
         this.getSqlSession().delete(ns + ".deleteById", id);
     }
-    public void delete(Serializable[] ids){
-        this.getSqlSession().delete(ns+"delete.",ids);
-    }
 
+    public void delete(Serializable[] ids){
+        this.getSqlSession().delete(ns+".delete",ids);
+    }
 }

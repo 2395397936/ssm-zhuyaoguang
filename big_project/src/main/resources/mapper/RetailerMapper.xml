@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace = "org.example.ssm.mapper.RetailerMapper">
+        <sql id="query_retailer_where">
+            <if test=" name != null"> and name like #{name}</if>
+            <if test=" address != null"> and address like #{address}</if>
+            <if test=" status != null"> and status like #{status}</if>
+            <if test=" telephone != null"> and telephone like #{telephone}</if>
+            <if test=" createTime != null">
+                and create_time = DATE_FORMAT(#{createTime},'%Y-%m-%d %H:%i:%s')
+            </if>
+            <if test=" startTime != null">
+                <![CDATA[ and createtime >=
+                DATE_FORMAT(#{startTime},'%Y-%m-%d %H:%i:%s')]]>
+            </if>
+            <if test=" endTime != null">
+                <![CDATA[ and createtime >=
+                DATE_FORMAT(#{endTime},'%Y-%m-%d %H:%i:%s')]]>
+            </if>
+        </sql>
+
+
+    <select id="get" parameterType="string" resultType="retailer">
+        select *
+        from retailer
+        where retailer_id = #{retailerId}
+    </select>
+        <!--        查询-->
+        <select id="find" parameterType="java.util.HashMap" resultType="retailer">
+            select * from retailer
+            where 1=1
+            <include refid="query_retailer_where"></include>
+            <!--        sql片段引入-->
+            <if test="startPage != null and pageSize != null">
+            LIMIT #{startPage},#{pageSize}</if>
+        </select>
+        <!--统计数量-->
+        <select id="count" parameterType="java.util.HashMap" resultType="int">
+            select COUNT(*) from retailer
+            where 1=1
+            <include refid = "query_retailer_where"></include><!-- sql 片段引入-->
+        </select>
+        <!--        插入语句略-->
+    <insert id="insert" parameterType="retailer">
+        insert into retailer (name,telephone,address,status)
+        values (#{name},#{telephone},#{address},#{status});
+    </insert>
+        <!--        修改语句略-->
+    <update id="update" parameterType="retailer">
+        update retailer
+        <set>
+            <if test="name!=null">name=#{name},</if>
+            <if test="telephone != null">telephone=#{telephone},</if>
+            <if test="address != null">address=#{address},</if>
+            <if test="status != null">status=#{status}</if>
+
+        </set>
+        where retailer_id=#{retailerId}
+    </update>
+        <!--        删除一条数据略-->
+    <delete id="deleteById" parameterType="string">
+        delete
+        from retailer
+        where retailer_id = #{retailerId}
+    </delete>
+        <!--        删除多条数据略-->
+    <delete id="delete" parameterType="string">
+        delete from retailer
+        where retailer_id in
+        <foreach collection="array" item="retailerId" open="(" close=")" separator=",">
+            #{retailerId}
+        </foreach>
+    </delete>
+</mapper>

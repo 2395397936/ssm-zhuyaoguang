@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <settings>
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
+    <!-- 别名定义 -->
+    <typeAliases>
+        <package name="org.example.ssm.entity"/>
+    </typeAliases>
+    <!-- 加载映射文件 -->
+    <mappers>
+        <!-- 通过 resource 方法一次加载一个映射文件 -->
+        <mapper resource="mapper/UserMapper.xml"/>
+        <mapper resource="mapper/RetailerMapper.xml"/>
+        <mapper resource="mapper/CommoditiesMapper.xml"/>
+        <mapper resource="mapper/AccessoryMapper.xml"/>
+    </mappers>
+</configuration>

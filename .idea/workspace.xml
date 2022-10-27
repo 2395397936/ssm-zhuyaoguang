@@ -2,14 +2,83 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="spring_mybatis_springmvc:war exploded" />
+      <artifact name="big_project:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f5a6615-335b-4570-a6ce-ae4e46f7ffaf" name="Changes" comment="" />
+    <list default="true" id="8f5a6615-335b-4570-a6ce-ae4e46f7ffaf" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/big_project_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big_project/big_project.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big_project/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big_project/src/main/java/org/example/ssm/controller/AccessoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big_project/src/main/java/org/example/ssm/controller/BaseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big_project/src/main/java/org/example/ssm/controller/CommoditiesController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big_project/src/main/java/org/example/ssm/controller/RetailerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big_project/src/main/java/org/example/ssm/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big_project/src/main/java/org/example/ssm/dao/AccessoryDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big_project/src/main/java/org/example/ssm/dao/BaseDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big_project/src/main/java/org/example/ssm/dao/CommoditiesDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big_project/src/main/java/org/example/ssm/dao/RetailerDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big_project/src/main/java/org/example/ssm/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big_project/src/main/java/org/example/ssm/dao/impl/AccessoryDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big_project/src/main/java/org/example/ssm/dao/impl/BaseDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big_project/src/main/java/org/example/ssm/dao/impl/CommoditiesDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big_project/src/main/java/org/example/ssm/dao/impl/RetailerDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big_project/src/main/java/org/example/ssm/dao/impl/UserDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big_project/src/main/java/org/example/ssm/entity/Accessory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big_project/src/main/java/org/example/ssm/entity/Commodities.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big_project/src/main/java/org/example/ssm/entity/PageEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big_project/src/main/java/org/example/ssm/entity/Retailer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big_project/src/main/java/org/example/ssm/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big_project/src/main/java/org/example/ssm/interceptor/LoginInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big_project/src/main/java/org/example/ssm/mapper/AccessoryMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big_project/src/main/java/org/example/ssm/mapper/CommoditiesMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big_project/src/main/java/org/example/ssm/mapper/RetailerMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big_project/src/main/java/org/example/ssm/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big_project/src/main/java/org/example/ssm/service/AccessoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big_project/src/main/java/org/example/ssm/service/CommoditiesService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big_project/src/main/java/org/example/ssm/service/RetailerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big_project/src/main/java/org/example/ssm/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big_project/src/main/java/org/example/ssm/service/impl/AccessoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big_project/src/main/java/org/example/ssm/service/impl/CommoditiesServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big_project/src/main/java/org/example/ssm/service/impl/RetailerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big_project/src/main/java/org/example/ssm/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big_project/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big_project/src/main/resources/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big_project/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big_project/src/main/resources/mapper/AccessoryMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big_project/src/main/resources/mapper/CommoditiesMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big_project/src/main/resources/mapper/RetailerMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big_project/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big_project/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big_project/src/main/resources/springmvc-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big_project/web/WEB-INF/pages/accessoryHome.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big_project/web/WEB-INF/pages/commoditiesHome.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big_project/web/WEB-INF/pages/home.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big_project/web/WEB-INF/pages/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big_project/web/WEB-INF/pages/menu.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big_project/web/WEB-INF/pages/register.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big_project/web/WEB-INF/pages/retailerHome.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big_project/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big_project/web/css/regcss.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big_project/web/css/retailerHome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big_project/web/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big_project/web/js/accessoryHome.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big_project/web/js/commoditiesHome.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/big_project/web/js/retailerHome.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dbf60c76-51fe-4037-9538-c6a6532d204a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/dbf60c76-51fe-4037-9538-c6a6532d204a.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_mybatis/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring_mybatis/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_mybatis_springmvc/src/main/java/org/example/ssm/dao/impl/BaseDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring_mybatis_springmvc/src/main/java/org/example/ssm/dao/impl/BaseDaoImpl.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,14 +90,18 @@
         <option value="XML File.xml" />
         <option value="spring-beans.schema" />
         <option value="application.properties" />
-        <option value="mybatis-config.xml" />
-        <option value="Interface" />
-        <option value="Class" />
-        <option value="Mapper" />
-        <option value="Jsp File" />
         <option value="CSS File" />
+        <option value="Interface" />
+        <option value="Jsp File" />
+        <option value="mybatis-config.xml" />
+        <option value="Mapper" />
+        <option value="Class" />
+        <option value="JavaScript File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -48,17 +121,22 @@
     </option>
   </component>
   <component name="ProjectId" id="2EkRf3u2GCE7H8cWMtHR2bTFNLl" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;import_schema_mapping&quot;: &quot;&lt;schema-mapping&gt;\n  &lt;databases&gt;\n    &lt;list&gt;\n      &lt;schema-mapping-item&gt;\n        &lt;source-data-source-id&gt;72622ffe-fd77-4eb7-92f1-bbee70a023df&lt;/source-data-source-id&gt;\n        &lt;source-path&gt;schema/&amp;quot;mybatis_test&amp;quot;&lt;/source-path&gt;\n        &lt;target-data-source-id&gt;72622ffe-fd77-4eb7-92f1-bbee70a023df&lt;/target-data-source-id&gt;\n        &lt;target-path&gt;schema/&amp;quot;mybatis_test_2&amp;quot;&lt;/target-path&gt;\n      &lt;/schema-mapping-item&gt;\n    &lt;/list&gt;\n  &lt;/databases&gt;\n&lt;/schema-mapping&gt;&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/HP/OneDrive/桌面/spring-security&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/workspace/ssm/big_project/src/main/resources/mapper&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -68,7 +146,7 @@
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;cdff7b7108089ba2f1a3c6f1e0b7156e&quot;
+    &quot;spring.configuration.checksum&quot;: &quot;306e72fe443e8ddcce236c77dc3fcc64&quot;
   },
   &quot;keyToStringList&quot;: {
     &quot;DatabaseDriversLRU&quot;: [
@@ -77,12 +155,16 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.example.ssm.entity" />
+      <recent name="org.example.ssm.service" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\workspace\mybatis\spring_springmvc\web" />
-      <recent name="E:\workspace\mybatis\spring_springmvc\src\main\resources" />
-      <recent name="E:\workspace\mybatis\spring_springmvc\src\main\java" />
-      <recent name="E:\workspace\mybatis\spring_mybatis_springmvc\web\WEB-INF" />
-      <recent name="E:\workspace\mybatis\spring_mybatis_springmvc\src\main\resources\mapper" />
+      <recent name="E:\workspace\ssm\big_project\src\main\resources\mapper" />
+      <recent name="E:\workspace\ssm\big_project\web\WEB-INF\pages" />
+      <recent name="E:\workspace\ssm\big_project\src\main\java\org\example\ssm\service\impl" />
+      <recent name="E:\workspace\ssm\big_project\src\main\java\org\example\ssm\service" />
+      <recent name="E:\workspace\ssm\big_project\src\main\java\org\example\ssm\dao\impl" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\workspace\mybatis\spring_mybatis_springmvc\web" />
@@ -93,87 +175,7 @@
       <recent name="mapper" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 8 ssm">
-    <configuration name="UserServiceTest.testFindUserById (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring_mybatis" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.sm.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.sm.test" />
-      <option name="MAIN_CLASS_NAME" value="org.example.sm.test.UserServiceTest" />
-      <option name="METHOD_NAME" value="testFindUserById" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserServiceTest.testFindUserById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring_mybatis_springmvc" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.ssm.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.ssm.test" />
-      <option name="MAIN_CLASS_NAME" value="org.example.ssm.test.UserServiceTest" />
-      <option name="METHOD_NAME" value="testFindUserById" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserServiceTest.testFindUserById2 (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring_mybatis_springmvc" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.ssm.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.ssm.test" />
-      <option name="MAIN_CLASS_NAME" value="org.example.ssm.test.UserServiceTest" />
-      <option name="METHOD_NAME" value="testFindUserById2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserServiceTest.testFindUserById2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring_mybatis" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.sm.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.sm.test" />
-      <option name="MAIN_CLASS_NAME" value="org.example.sm.test.UserServiceTest" />
-      <option name="METHOD_NAME" value="testFindUserById2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserServiceTest.testQuery" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring_mybatis_springmvc" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.ssm.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.ssm.test" />
-      <option name="MAIN_CLASS_NAME" value="org.example.ssm.test.UserServiceTest" />
-      <option name="METHOD_NAME" value="testQuery" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Tomcat Server.big project">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="my" />
       <method v="2">
@@ -363,24 +365,100 @@
         </option>
       </method>
     </configuration>
+    <configuration name="big project" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
+      <deployment>
+        <artifact name="big_project:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/big_project" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="609b2204-ef12-4563-941d-783f56a4d9d7" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="63633" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="big_project:war exploded" />
+        </option>
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="JUnit.UserServiceTest.testFindUserById" />
-      <item itemvalue="JUnit.UserServiceTest.testFindUserById (1)" />
-      <item itemvalue="JUnit.UserServiceTest.testFindUserById2" />
-      <item itemvalue="JUnit.UserServiceTest.testFindUserById2 (1)" />
-      <item itemvalue="JUnit.UserServiceTest.testQuery" />
       <item itemvalue="Tomcat Server.Tomcat 8 ssm" />
       <item itemvalue="Tomcat Server.Tomcat 8 ss" />
+      <item itemvalue="Tomcat Server.big project" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.UserServiceTest.testQuery" />
-        <item itemvalue="JUnit.UserServiceTest.testFindUserById (1)" />
-        <item itemvalue="JUnit.UserServiceTest.testFindUserById" />
-        <item itemvalue="JUnit.UserServiceTest.testFindUserById2 (1)" />
-        <item itemvalue="JUnit.UserServiceTest.testFindUserById2" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -399,11 +477,26 @@
       <workItem from="1665480552382" duration="4174000" />
       <workItem from="1665652362851" duration="14506000" />
       <workItem from="1665715462924" duration="8933000" />
+      <workItem from="1665840104791" duration="1484000" />
+      <workItem from="1666673706733" duration="23587000" />
+      <workItem from="1666765272457" duration="33840000" />
+      <workItem from="1666859767832" duration="824000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

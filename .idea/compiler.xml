@@ -12,6 +12,7 @@
         <module name="spring_mybatis" />
         <module name="spring_mybatis_springmvc" />
         <module name="page83-95" />
+        <module name="big_project" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

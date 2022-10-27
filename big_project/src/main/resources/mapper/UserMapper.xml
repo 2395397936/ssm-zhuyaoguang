@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.example.ssm.mapper.UserMapper">
+
+    <select id="get" parameterType="string" resultType="user">
+        select *
+        from user
+        where user_id = #{userId}
+    </select>
+
+    <select id="find" parameterType="map" resultType="user">
+        select * from user
+        where 1=1
+        <if test="username != null">and username=#{username}</if>
+        <if test="password != null">and password=#{password}</if>
+        <if test="name != null">and name like #{name}</if>
+        <if test="telephone != null">and telephone = #{telephone}</if>
+    </select>
+
+    <insert id="insert" parameterType="user">
+        insert into user
+            (user_id, username, password, name, telephone)
+        values (#{userId, jdbcType=VARCHAR},
+                #{username, jdbcType=VARCHAR},
+                #{password, jdbcType=VARCHAR},
+                #{name, jdbcType=VARCHAR},
+                #{telephone, jdbcType=VARCHAR})
+    </insert>
+
+    <update id="update" parameterType="user">
+        update user
+        <set>
+            <if test="password!=nul1">PASSWORD=#{password, jdbcType=VARCHAR},</if>
+            <if test="name != null">NAME=#{name,jdbcType=VARCHAR},</if>
+            <if test="telephone != null">TELPHONE=#{telephone, jdbcType=VARCHAR}</if>
+        </set>
+        where user_id=#{userId}
+    </update>
+
+    <delete id="deleteById" parameterType="string">
+        delete
+        from user
+        where user_id = #{userId}
+    </delete>
+
+    <delete id="delete" parameterType="string">
+        delete from user
+        where user_id in
+        <foreach collection="array" item="userId" open="(" close=")" separator=",">
+            #{userId}
+        </foreach>
+    </delete>
+</mapper>

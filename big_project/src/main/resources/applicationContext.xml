@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd
+http://www.springframework.org/schema/aop
+https://www.springframework.org/schema/aop/spring-aop.xsd
+http://www.springframework.org/schema/tx
+http://www.springframework.org/schema/tx/spring-tx.xsd">
+    <!-- 1，自动扫描包，让指定包下的注解生效,由IOC容器统一管理 -->
+    <context:component-scan base-package="org.example.ssm.dao,org.example.ssm.service"/>
+
+
+
+    <context:property-placeholder location="classpath:jdbc.properties"/>
+    <!-- 配置数据源 -->
+
+    <bean id="pooledDataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+        <property name="driverClass" value="${jdbc.driver}"/>
+        <property name="jdbcUrl" value="${jdbc.url}"/>
+        <property name="user" value="${jdbc.username}"/>
+        <property name="password" value="${jdbc.password}"/>
+    </bean>
+
+    <!-- sqlSessionFactory -->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <!-- 加载 MyBatis 的配置文件 -->
+        <property name="configLocation" value="classpath:mybatis-config.xml"/>
+        <!-- 数据源 -->
+        <property name="dataSource" ref="pooledDataSource"/>
+    </bean>
+
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <!-- 扫描 cn.com.s.mapper 包下的组件 -->
+        <property name="basePackage" value="org.example.ssm.mapper"/>
+    </bean>
+
+
+<!--    <bean id="userDao" class="org.example.ssm.dao.impl.UserDaoImpl">-->
+<!--        <property name="sqlSessionFactory" ref="sqlSessionFactory"/>-->
+<!--    </bean>-->
+
+<!--    <aop:config>-->
+<!--        <aop:pointcut id="txPoint" expression="execution(* org.example.ssm.service.*.*(..))"/>-->
+<!--        <aop:advisor pointcut-ref="txPoint" advice-ref="txAdvice"/>-->
+<!--    </aop:config>-->
+<!--    <context:annotation-config/>-->
+
+
+
+<!--    <tx:advice id="txAdvice">-->
+<!--        <tx:attributes>-->
+<!--            <tx:method name="*"/>-->
+<!--            <tx:method name="get*" read-only="false"/>-->
+<!--        </tx:attributes>-->
+<!--    </tx:advice>-->
+
+</beans>

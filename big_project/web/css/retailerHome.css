@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    cursor: pointer;
+}
+
+a:hover{
+    color: #173e65;
+}
+
+#menuContent a {
+    text-decoration: none;
+    color: #ffffff
+}
+
+.c {
+    border-style: solid;
+    width: 200px;
+    height: 150px;
+    /*margin: 4px 23px 0px 23px;*/
+    border-radius: 5px;
+    display: block;
+    background: #fff;
+    margin: 18% auto;
+}
+
+.mask {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, .3);
+    display: none;
+}
+.addMask {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, .3);
+    display: none;
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.example.ssm.mapper.AccessoryMapper">
+        <!--查询-->
+        <select id="find" parameterType="java.util.HashMap" resultType="accessory">
+            select * from accessory
+            where 1=1
+            <if test="fruitId != null ">and fruit_id = #{fruitId}</if>
+        </select>
+        <!--删除一条数据-->
+        <delete id="deleteByFruitId" parameterType="string">
+            delete from accessory
+            where fruit_id=#{fruitId}
+        </delete>
+
+    <delete id="deleteById" parameterType="string">
+        delete
+        from accessory
+        where accessory_id = #{accessoryId}
+    </delete>
+        <!--删除多条数据略(一维字符串数组的形成)-->
+        <delete id="delete" parameterType="string">
+            delete from accessory
+            where accessory_id in
+            <foreach collection="array" item="accessoryId" open="(" close=")"
+                     separator=",">
+                #{accessoryId}
+            </foreach>
+        </delete>
+
+    <insert id="insert" parameterType="accessory">
+        insert into accessory (fruit_id,name,price)
+        values (#{fruitId},#{name},#{price});
+    </insert>
+
+</mapper>
